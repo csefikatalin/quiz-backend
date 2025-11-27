@@ -9,18 +9,14 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
+   public function up(): void
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('questions', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->integer('point');            
-            $table->rememberToken();
+            $table->text('question_text');
+            $table->enum('difficulty', ['easy', 'medium', 'hard']);
             $table->timestamps();
         });
-
-
-
     }
 
     /**
@@ -28,7 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('users');
-      
+        Schema::dropIfExists('questions');
     }
 };
