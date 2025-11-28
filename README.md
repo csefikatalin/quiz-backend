@@ -15,6 +15,7 @@ A képernyőterveket a RESOURCES mappában találod.
     - helytelen válasz esetén pirosra. 
 6. A rendszer számolja a pontokat, melyet a quiz végén el is lehet menteni. Ekkor meg kell adni egy nevet, a rendszer a névhez elmenti a quiz nehézségi szintjét (könnyű, közepes, nehéz, vegyes), és a pontszámot. 
 7. Az elmentett pontszámok alapján lehet toplistát megjeleníteni. 
+8. Lehet választani a nehézségi szintek között.
 
 ### Egyszerűsítések: 
 
@@ -22,6 +23,7 @@ A képernyőterveket a RESOURCES mappában találod.
 - Minden kérdéshez max 4 választ lehet megadni, és abból pontosan egy a helyes.
 - A programban nincs bejelentkezés, felhasználókezelés, de elmenthetjük a quiz eredményét.
 - Első körben nyilvános (nem védett) API végpontokat kell készíteni. 
+
 
 # Adatbázis
 
