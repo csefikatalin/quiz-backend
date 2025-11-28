@@ -83,7 +83,15 @@ A képernyőterveket a RESOURCES mappában találod.
 
 ### Projekt létrehozása
 
+```
 composer create-project laravel/laravel quiz-backend   
+```
+
+API kiszolgáló létrehozása:
+
+```
+php artisan install:api
+```
 
 ### Reposytory létrehozása
 
