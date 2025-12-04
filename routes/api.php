@@ -16,5 +16,6 @@ post questions
 
 Route::get('/questions', [QuestionController::class, 'index']);
 Route::post('/question', [QuestionController::class, 'store']);
+Route::delete('/question/{id}', [QuestionController::class, 'destroy']);
 Route::get('/users', [UserController::class, 'index']);
 Route::post('/user', [UserController::class, 'store']);

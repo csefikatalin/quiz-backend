@@ -79,6 +79,19 @@ class QuestionController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $question = Question::find($id);
+
+        if (!$question) {
+            return response()->json([
+                'message' => 'A kérdés nem található.'
+            ], 404);
+        }
+
+        // Törlés (ha a cascade nincs beállítva, a booted() gondoskodik róla)
+        $question->delete();
+
+        return response()->json([
+            'message' => 'Kérdés és válaszai sikeresen törölve.'
+        ], 200);
     }
 }
